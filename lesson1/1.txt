@@ -1,0 +1,24 @@
+пользователь вводи два целых числа
+если сумма делится на 5 вывести сумму 
+в противном случае вывести разность 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int r;
+	int e;
+	cin >> e >> r;
+	if ((e + r) % 5 == 0)
+	{
+		cout << e + r;
+	}
+	else
+	{
+		cout << e - r;
+	}
+
+	return 0;
+}

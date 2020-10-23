@@ -1,0 +1,31 @@
+максимум из четырёх чисел
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int e;
+	int r;
+	int t;
+	int y;
+	cin >> e >> r >> t >> y;
+	if (e >= r && e >= t && e >= y)
+	{
+		cout << "max = " << e;
+	}
+	if (t >= e && t >= r && t >= y)
+	{
+		cout << "max = " << e;
+	}
+	if (r >= e && r >= t && r >= y)
+	{
+		cout << "max = " << r;
+	}
+	if (y >= r && y >= t && y >= e)
+	{
+		cout << "max = " << y;
+	}
+	return 0;
+}

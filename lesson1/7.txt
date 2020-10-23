@@ -1,3 +1,5 @@
+максимум из произвольного количетсва чисел
+
 #include <iostream>
 
 using namespace std;
