@@ -1,0 +1,27 @@
+//пользователь вводит три числа
+//если хотя бы одно из них делится на три, вывести :"yes"
+//в противном случае, вывести : "no"
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int r;
+	int u;
+	int p;
+
+	cin >> r >> u >> p;
+	
+	if ( r % 3 == 0 || u % 3 == 0 || p % 3 == 0)
+	{
+		cout << "yes";
+	}
+	else
+	{
+		cout << "no";
+	}
+
+	return 0;
+}

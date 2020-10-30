@@ -1,0 +1,34 @@
+//пользователь вводит три числа
+//если ровно два из них делятся на три, вывести :"yes"
+//в противном случае, вывести : "no"
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int y;
+	int f;
+	int d;
+
+	cin >> y >> f >> d;
+
+	bool case1 = y % 3 == 0 && f % 3 == 0 && d % 3 != 0;
+	bool case2 = y % 3 == 0 && f % 3 != 0 && d % 3 == 0;
+	bool case3 = y % 3 != 0 && f % 3 == 0 && d % 3 == 0;
+
+
+	if (case1 || case2 || case3)
+	{
+		cout << "yes";
+	}
+	else
+	{
+		cout << "no";
+	}
+
+	return 0;
+}

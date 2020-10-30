@@ -1,0 +1,26 @@
+//пользователь вводит три числа
+//если все они дают остаток 1 при делении на 4, вывести :"yes"
+//в противном случае, вывести : "no"
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int r;
+	int d;
+	int m;
+
+	cin >> r >> d >> m;
+
+	if ( r % 4 == 1 && d % 4 == 1 && m % 4 == 1)
+	{
+		cout << "yes";
+	}
+	else
+	{
+		cout << "no";
+	}
+	return 0;
+}

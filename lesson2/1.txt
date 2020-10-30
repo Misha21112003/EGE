@@ -1,0 +1,21 @@
+/*
+пользователь вводит три числа
+вывести квадрат суммы этих чисел
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int x = 0;
+	int y = 0;
+	int z = 0;
+
+	int w = x + y + z;
+
+	cout << w * w;
+
+	return 0;
+}

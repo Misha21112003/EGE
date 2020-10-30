@@ -1,0 +1,37 @@
+//пользователь вводит кол во чисел , затем сами числа 
+//если ровно два из них делятся на три, вывести :"yes"
+//в противном случае, вывести : "no"
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int number = 0;
+	int amount = 0;
+	int amountOfNUmbers = 0;
+	cin >> amountOfNUmbers;
+
+	for (int i = 0; i < amountOfNUmbers; ++i)
+	{
+		cin >> number;
+		if (number % 3 == 0)
+		{
+			++amount;
+		}
+	}
+
+	if (amount == 2)
+	{
+		cout << "yes";
+	}
+	else
+	{
+		cout << "no";
+	}
+
+	return 0;
+}
