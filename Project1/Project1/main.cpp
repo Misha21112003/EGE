@@ -1,38 +1,26 @@
-
-
-
-
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-
-	int number = 0;
-	int max = 0;
-	cin >> number;
-	max = number;
-	int min = number;
-	for (int i = 2; i <= 5; ++i)
-	{
-		cin >> number;
-		if (number > max)
-		{
-			max = number;
-		}
-		if (number < min)
-		{
-			min = number;
-		}
-
-	}
-		
-	cout << max - min;
-
-
-
-
+	int a = 0;
+	int b = 0;
 	
+	cin >> a >> b;
+
+	if (a % 2 == 0 && b % 2 == 0)
+	{
+		cout << a + b;
+	}
+	else if (a % 2 == 1 && b % 2 == 1)
+	{
+		cout << a * b;
+	}
+	else
+	{
+		cout << a - b;
+	}
+
 	return 0;
 }

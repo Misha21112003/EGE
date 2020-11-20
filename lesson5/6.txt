@@ -1,0 +1,24 @@
+ посчитать количество чисел из диапазона от 250 до 900,
+ кратных 3, но не кратных 9
+
+#include <iostream>
+
+	using namespace std;
+
+	int main()
+	{
+		
+		int amount = 0;
+
+		for ( int i = 250; i <= 900; i++)
+		{
+			if (i % 3 == 0 && i % 9 != 0)
+			{
+				++amount;
+			}
+		}
+		cout << amount;
+	
+
+	return 0;
+}
